@@ -1,17 +1,13 @@
 import { useState } from "react";
 import { useParams, useNavigate, Navigate } from "react-router-dom";
-import { Alert, Button, Spinner } from "@tehik-ee/tedi-react/tedi";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { Alert, Button } from "@tehik-ee/tedi-react/tedi";
 import { useInvoice, useConfirmInvoice, useSendInvoice, useRemoveLine } from "../hooks/useInvoice";
 import { InvoiceLineTable } from "../components/invoice/InvoiceLineTable";
 import { InvoiceSummaryBar } from "../components/invoice/InvoiceSummaryBar";
 import { InvoiceStatusBadge } from "../components/invoice/InvoiceStatusBadge";
-import { AiWarningPanel } from "../components/invoice/AiWarningPanel";
 import { AuditTrail } from "../components/invoice/AuditTrail";
 import { AddLineModal } from "../components/invoice/AddLineModal";
-import { ConfidenceBadge } from "../components/invoice/ConfidenceBadge";
 import { LoadingSpinner } from "../components/shared/LoadingSpinner";
-import { PdfPreviewLink } from "../components/shared/PdfPreviewLink";
 import PageHeader from "../components/layout/PageHeader";
 import { api } from "../api/client";
 
@@ -22,24 +18,11 @@ export default function InvoiceReview() {
   const confirmMutation = useConfirmInvoice();
   const sendMutation = useSendInvoice();
   const removeLine = useRemoveLine(id ?? '');
-  const queryClient = useQueryClient();
   const [showAddModal, setShowAddModal] = useState(false);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
   const [confirmAndSend, setConfirmAndSend] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [mutationError, setMutationError] = useState<string | null>(null);
-
-  const reprocessMutation = useMutation({
-    mutationFn: () => api.reprocessSaatekiri(invoice?.saatekirjaId ?? ''),
-    onSuccess: (newInvoice) => {
-      queryClient.invalidateQueries({ queryKey: ['invoice'] });
-      navigate(`/invoices/${newInvoice.id}`);
-      showToast('AI töötlemine õnnestus');
-    },
-    onError: (err) => {
-      setMutationError(err instanceof Error ? err.message : 'Uuesti töötlemine ebaõnnestus');
-    },
-  });
 
   if (!id) return <Navigate to="/invoices" replace />;
   if (isLoading) return <LoadingSpinner />;
@@ -48,7 +31,6 @@ export default function InvoiceReview() {
   }
 
   const isEditable = invoice.status === 'PENDING_REVIEW';
-  const aiFailed = invoice.aiProcessingFailed === true;
 
   function showToast(msg: string) {
     setToast(msg);
@@ -153,54 +135,60 @@ export default function InvoiceReview() {
 
       {/* Mutation error */}
       {mutationError && (
-        <Alert type="danger" style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
-          Midagi läks valesti: {mutationError}
-        </Alert>
+        <div style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
+          <Alert type="danger">Midagi läks valesti: {mutationError}</Alert>
+        </div>
       )}
 
       {/* Confirmed banner */}
       {(invoice.status === 'SENT' || invoice.status === 'CONFIRMED') && (
-        <Alert type="info" style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
-          <strong>Arve on kinnitatud ja saadetud Tervisekassale ✓</strong>
-          {' '}
-          <PdfPreviewLink href={api.getInvoicePdfUrl(invoice.id)} label="Ekspordi PDF ↗" />
-        </Alert>
+        <div style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
+          <Alert type="info">
+            <strong>Arve on kinnitatud ja saadetud Tervisekassale ✓</strong>
+            {' '}
+            {/* <PdfPreviewLink href={api.getInvoicePdfUrl(invoice.id)} label="Ekspordi PDF ↗" /> */}
+          </Alert>
+        </div>
       )}
 
       {/* REJECTED banner */}
       {invoice.status === 'REJECTED' && (
-        <Alert type="danger" style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
-          Arve on tagasi lükatud.
-        </Alert>
+        <div style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
+          <Alert type="danger">Arve on tagasi lükatud.</Alert>
+        </div>
       )}
 
       {/* Pending referrals banner */}
       {invoice.openSaatekirjadCount != null && invoice.openSaatekirjadCount > 0 && (
-        <Alert type="warning" style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
-          <strong>Ootame veel {invoice.openSaatekirjadCount} saatekirja vastust{invoice.openSaatekirjadCount > 1 ? 'eid' : ''}.</strong>
-          {' '}Tulevased vastused lisatakse uue arvena.
-        </Alert>
+        <div style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
+          <Alert type="warning">
+            <strong>Ootame veel {invoice.openSaatekirjadCount} saatekirja vastust{invoice.openSaatekirjadCount > 1 ? 'eid' : ''}.</strong>
+            {' '}Tulevased vastused lisatakse uue arvena.
+          </Alert>
+        </div>
       )}
 
       {/* AI Summary */}
-      {invoice.aiSummary && (
-        <Alert type="info" style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
-          <div>{invoice.aiSummary}</div>
-          <div style={{ marginTop: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{ fontSize: '0.875rem' }}>Automatiseeritavus:</span>
-            <ConfidenceBadge confidence={invoice.automatability} />
-          </div>
-        </Alert>
-      )}
+      {/* {invoice.aiSummary && (
+        <div style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
+          <Alert type="info">
+            <div>{invoice.aiSummary}</div>
+            <div style={{ marginTop: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '0.875rem' }}>Automatiseeritavus:</span>
+              <ConfidenceBadge confidence={invoice.automatability} />
+            </div>
+          </Alert>
+        </div>
+      )} */}
 
       {/* AI Warnings */}
-      <AiWarningPanel
+      {/* <AiWarningPanel
         missingData={invoice.aiMissingData}
         warnings={invoice.aiWarnings}
-      />
+      /> */}
 
       {/* Reprocess button when AI failed */}
-      {aiFailed && (
+      {/* {aiFailed && (
         <div style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
           <Button
             visualType="primary"
@@ -210,7 +198,7 @@ export default function InvoiceReview() {
             {reprocessMutation.isPending ? <Spinner label="Töötlen..." /> : 'Töötle uuesti'}
           </Button>
         </div>
-      )}
+      )} */}
 
       {/* Lines section */}
       <div style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
@@ -281,9 +269,9 @@ export default function InvoiceReview() {
               Arve kinnitatakse ja saadetakse kohe Tervisekassale.
             </p>
             {mutationError && (
-              <Alert type="danger" style={{ marginBottom: 'var(--spacing-sm, 8px)' }}>
-                {mutationError}
-              </Alert>
+              <div style={{ marginBottom: 'var(--spacing-sm, 8px)' }}>
+                <Alert type="danger">{mutationError}</Alert>
+              </div>
             )}
             <div style={{ display: 'flex', gap: 'var(--spacing-sm, 8px)', justifyContent: 'flex-end' }}>
               <Button

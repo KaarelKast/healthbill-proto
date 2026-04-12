@@ -1,6 +1,5 @@
 import { Button, Spinner } from "@tehik-ee/tedi-react/tedi";
 import type { Invoice } from "../../types";
-import { api } from "../../api/client";
 
 interface InvoiceSummaryBarProps {
   invoice: Invoice;
@@ -53,14 +52,14 @@ export function InvoiceSummaryBar({
         {(invoice.status === 'CONFIRMED' || invoice.status === 'SENT') && (
           <>
             <span style={{ color: 'var(--color-success, #4caf50)', fontWeight: 700 }}>Kinnitatud ✓</span>
-            <a
+            {/* <a
               href={api.getInvoicePdfUrl(invoice.id)}
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: 'rgba(255,255,255,0.85)', textDecoration: 'underline', fontSize: '0.9rem' }}
             >
               Ekspordi PDF ↗
-            </a>
+            </a> */}
           </>
         )}
 

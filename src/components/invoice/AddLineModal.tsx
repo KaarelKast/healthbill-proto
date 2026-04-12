@@ -259,7 +259,7 @@ export function AddLineModal({ invoiceId, visitDate, onClose }: AddLineModalProp
               groupRowsBy="rowGroupKey"
               onRowClick={handleRowClick}
               isLoading={codesLoading}
-              placeholder={{ title: 'Koode ei leitud', description: 'Muuda otsingukriteeriume' }}
+              placeholder={{ children: 'Koode ei leitud. Muuda otsingukriteeriume.' }}
             />
           )}
         </div>
@@ -271,10 +271,10 @@ export function AddLineModal({ invoiceId, visitDate, onClose }: AddLineModalProp
             {selectedCode && <> | Valitud: <strong>{selectedCode}</strong></>}
           </span>
           <div style={{ display: 'flex', gap: 'var(--spacing-sm, 8px)' }}>
-            <Button variant="ghost" onClick={onClose} disabled={addLine.isPending}>
+            <Button visualType="neutral" onClick={onClose} disabled={addLine.isPending}>
               Tühista
             </Button>
-            <Button variant="primary" onClick={handleSubmit} disabled={addLine.isPending || !selectedCode}>
+            <Button visualType="primary" onClick={handleSubmit} disabled={addLine.isPending || !selectedCode}>
               {addLine.isPending ? <Spinner label="Lisan..." /> : 'OK'}
             </Button>
           </div>

@@ -163,6 +163,7 @@ export interface LisaEntry {
   saatekirjaNumber: string;
   ttlCode: string;
   serviceDate: string;
+  haigusjuhtumiNr?: string;
   status?: 'match' | 'not_invoiced' | 'missing_from_partner';
 }
 

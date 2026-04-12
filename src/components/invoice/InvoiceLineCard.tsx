@@ -1,4 +1,4 @@
-import { Card, Button } from "@tehik-ee/tedi-react/tedi";
+import { Button } from "@tehik-ee/tedi-react/tedi";
 import type { InvoiceLine } from "../../types";
 import { ConfidenceBadge } from "./ConfidenceBadge";
 
@@ -10,7 +10,7 @@ interface InvoiceLineCardProps {
 
 export function InvoiceLineCard({ line, isEditable, onRemove }: InvoiceLineCardProps) {
   return (
-    <Card style={{ marginBottom: 'var(--spacing-sm, 8px)', padding: 'var(--spacing-md, 16px)' }}>
+    <div style={{ marginBottom: 'var(--spacing-sm, 8px)', padding: 'var(--spacing-md, 16px)', border: '1px solid var(--color-border, #e0e0e0)', borderRadius: '8px', background: 'white' }}>
       <div style={{ display: 'flex', alignItems: 'flex-start', gap: 'var(--spacing-md, 16px)' }}>
         {/* Checkbox */}
         <div style={{ paddingTop: '2px' }}>
@@ -103,6 +103,6 @@ export function InvoiceLineCard({ line, isEditable, onRemove }: InvoiceLineCardP
           )}
         </div>
       </div>
-    </Card>
+    </div>
   );
 }

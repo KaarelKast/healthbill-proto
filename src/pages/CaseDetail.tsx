@@ -87,9 +87,9 @@ export default function CaseDetail() {
 
       {/* Process error */}
       {processError && (
-        <Alert type="danger" style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
-          Töötlemine ebaõnnestus: {processError}
-        </Alert>
+        <div style={{ marginBottom: 'var(--spacing-md, 16px)' }}>
+          <Alert type="danger">Töötlemine ebaõnnestus: {processError}</Alert>
+        </div>
       )}
 
       {/* Saatekirjad */}

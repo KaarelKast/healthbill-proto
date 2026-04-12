@@ -7,6 +7,7 @@ import PageHeader from "../components/layout/PageHeader";
 import type { ParsedPartnerLine, LisaEntry } from "../types";
 
 import partnerParsedData from '../data/partner-invoice-parsed.json';
+import rawInvoices from '../data/invoices.json';
 
 const PARTNERS = ['Synlab', 'Tartu Ülikooli Kliinikum', 'Confido'];
 
@@ -214,21 +215,64 @@ export default function PartnerInvoices() {
               <tbody>
                 {comparisonRows.map((row) => {
                   const isExpanded = expandedRows.has(row.code);
-                  const codeEntries = lisaByCode.get(row.code) ?? [];
+                  const lisaEntries = lisaByCode.get(row.code) ?? [];
 
-                  // Compute per-entry status based on parent row quantities:
-                  // First `ourQty` entries are "match", the rest are "not_invoiced"
-                  const enrichedEntries = codeEntries.map((entry, idx) => ({
-                    ...entry,
-                    status: (row.status === 'match'
-                      ? 'match'
-                      : row.status === 'missing_from_us'
-                        ? 'not_invoiced'
-                        : row.status === 'missing_from_partner'
-                          ? 'missing_from_partner'
-                          : idx < row.ourQty ? 'match' : 'not_invoiced'
-                    ) as 'match' | 'not_invoiced' | 'missing_from_partner',
-                  }));
+                  // Build a set of personalCodes present in the lisa (partner side)
+                  const lisaPersonCodes = new Set(lisaEntries.map((e) => e.personalCode));
+
+                  // Get our system's line instances for this code + partner from invoice data
+                  const ourInstances: Array<{ personalCode: string; haigusjuhtumiNr: string; serviceDate: string }> = [];
+                  for (const inv of rawInvoices as any[]) {
+                    for (const line of inv.lines) {
+                      if (line.ttlCode === row.code && line.partnerName === selectedPartner) {
+                        for (let q = 0; q < line.quantity; q++) {
+                          ourInstances.push({
+                            personalCode: inv.patientCode,
+                            haigusjuhtumiNr: inv.haigusjuhtumiNr,
+                            serviceDate: line.serviceDate,
+                          });
+                        }
+                      }
+                    }
+                  }
+
+                  // Build a count of how many times each personalCode appears in our system
+                  const ourByPerson = new Map<string, number>();
+                  for (const inst of ourInstances) {
+                    ourByPerson.set(inst.personalCode, (ourByPerson.get(inst.personalCode) ?? 0) + 1);
+                  }
+
+                  // Enrich lisa entries: match them against our instances
+                  const matchedPersonCounts = new Map<string, number>();
+                  const enrichedEntries: LisaEntry[] = lisaEntries.map((entry) => {
+                    const matched = matchedPersonCounts.get(entry.personalCode) ?? 0;
+                    const ourCount = ourByPerson.get(entry.personalCode) ?? 0;
+                    const isMatched = matched < ourCount;
+                    matchedPersonCounts.set(entry.personalCode, matched + 1);
+
+                    // Find haiguslugu for this person
+                    const ourInst = ourInstances.find((i) => i.personalCode === entry.personalCode);
+
+                    return {
+                      ...entry,
+                      haigusjuhtumiNr: ourInst?.haigusjuhtumiNr,
+                      status: isMatched ? 'match' as const : 'not_invoiced' as const,
+                    };
+                  });
+
+                  // Add entries from our system that are NOT in the lisa (missing from partner)
+                  for (const inst of ourInstances) {
+                    if (!lisaPersonCodes.has(inst.personalCode)) {
+                      enrichedEntries.push({
+                        personalCode: inst.personalCode,
+                        saatekirjaNumber: '—',
+                        ttlCode: row.code,
+                        serviceDate: new Date(inst.serviceDate).toLocaleDateString('et-EE'),
+                        haigusjuhtumiNr: inst.haigusjuhtumiNr,
+                        status: 'missing_from_partner',
+                      });
+                    }
+                  }
 
                   return (
                     <ComparisonRow
@@ -297,6 +341,7 @@ function ComparisonRow({ row, isExpanded, onToggle, lisaEntries, hasLisa }: Comp
                 <tr style={{ borderBottom: '1px solid var(--color-border, #e0e0e0)' }}>
                   <th style={subThStyle}>Isikukood</th>
                   <th style={subThStyle}>Saatekiri nr</th>
+                  <th style={subThStyle}>Haiguslugu</th>
                   <th style={subThStyle}>Kuupäev</th>
                   <th style={{ ...subThStyle, textAlign: 'center' }}>Olek</th>
                 </tr>
@@ -310,6 +355,7 @@ function ComparisonRow({ row, isExpanded, onToggle, lisaEntries, hasLisa }: Comp
                     <tr key={idx} style={{ borderBottom: '1px solid var(--color-border, #f0f0f0)' }}>
                       <td style={subTdStyle}>{entry.personalCode}</td>
                       <td style={{ ...subTdStyle, fontFamily: 'monospace' }}>{entry.saatekirjaNumber}</td>
+                      <td style={{ ...subTdStyle, fontFamily: 'monospace' }}>{entry.haigusjuhtumiNr || '—'}</td>
                       <td style={subTdStyle}>{entry.serviceDate || '—'}</td>
                       <td style={{ ...subTdStyle, textAlign: 'center' }}>
                         <StatusBadge color={badgeColor}>{badgeLabel}</StatusBadge>
