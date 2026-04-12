@@ -1,0 +1,5 @@
+/* Selected row highlight in code picker table */
+.tedi-table-row--selected td {
+  background-color: var(--color-primary, #0066cc) !important;
+  color: white !important;
+}

@@ -1,0 +1,43 @@
+{
+  "Synlab": {
+    "lines": [
+      { "code": "66704", "description": "Üldkliiniline vereanalüüs hematoloogilise analüsaatoriga", "quantity": 4, "unitPrice": 2.53, "total": 10.12 },
+      { "code": "66706", "description": "Biokeemiline vereanalüüs", "quantity": 3, "unitPrice": 3.2, "total": 9.60 },
+      { "code": "7260", "description": "Silmapõhja fotografeerimine", "quantity": 1, "unitPrice": 19.99, "total": 19.99 }
+    ],
+    "lisa": [
+      { "personalCode": "49205120234", "saatekirjaNumber": "SK-2026-001", "ttlCode": "66704", "serviceDate": "15.03.2026" },
+      { "personalCode": "49205120234", "saatekirjaNumber": "SK-2026-001", "ttlCode": "66706", "serviceDate": "15.03.2026" },
+      { "personalCode": "38901234567", "saatekirjaNumber": "SK-2026-002", "ttlCode": "66704", "serviceDate": "12.03.2026" },
+      { "personalCode": "38901234567", "saatekirjaNumber": "SK-2026-002", "ttlCode": "66704", "serviceDate": "13.03.2026" },
+      { "personalCode": "46005050505", "saatekirjaNumber": "SK-2026-003", "ttlCode": "66706", "serviceDate": "10.03.2026" },
+      { "personalCode": "48806150123", "saatekirjaNumber": "SK-2026-005", "ttlCode": "66704", "serviceDate": "20.03.2026" },
+      { "personalCode": "48806150123", "saatekirjaNumber": "SK-2026-005", "ttlCode": "66706", "serviceDate": "20.03.2026" },
+      { "personalCode": "50101010101", "saatekirjaNumber": "SK-2026-010", "ttlCode": "7260", "serviceDate": "18.03.2026" }
+    ]
+  },
+  "Tartu Ülikooli Kliinikum": {
+    "lines": [
+      { "code": "6320", "description": "EKG registreerimine ja kirjeldamine", "quantity": 2, "unitPrice": 9.88, "total": 19.76 },
+      { "code": "9063", "description": "Eriarsti e-konsultatsioon", "quantity": 1, "unitPrice": 0, "total": 0 }
+    ],
+    "lisa": [
+      { "personalCode": "49205120234", "saatekirjaNumber": "SK-2026-001", "ttlCode": "6320", "serviceDate": "15.03.2026" },
+      { "personalCode": "46005050505", "saatekirjaNumber": "SK-2026-003", "ttlCode": "6320", "serviceDate": "10.03.2026" },
+      { "personalCode": "38901234567", "saatekirjaNumber": "SK-2026-002", "ttlCode": "9063", "serviceDate": "12.03.2026" }
+    ]
+  },
+  "Confido": {
+    "lines": [
+      { "code": "66704", "description": "Üldkliiniline vereanalüüs hematoloogilise analüsaatoriga", "quantity": 1, "unitPrice": 2.53, "total": 2.53 },
+      { "code": "66706", "description": "Biokeemiline vereanalüüs", "quantity": 1, "unitPrice": 3.2, "total": 3.2 },
+      { "code": "7042", "description": "Perearstivisiit koos uuringutega", "quantity": 2, "unitPrice": 30.0, "total": 60.0 }
+    ],
+    "lisa": [
+      { "personalCode": "46005050505", "saatekirjaNumber": "SK-2026-003", "ttlCode": "66704", "serviceDate": "10.03.2026" },
+      { "personalCode": "35507080901", "saatekirjaNumber": "SK-2026-004", "ttlCode": "66706", "serviceDate": "08.03.2026" },
+      { "personalCode": "46005050505", "saatekirjaNumber": "SK-2026-003", "ttlCode": "7042", "serviceDate": "10.03.2026" },
+      { "personalCode": "46005050505", "saatekirjaNumber": "SK-2026-003", "ttlCode": "7042", "serviceDate": "11.03.2026" }
+    ]
+  }
+}

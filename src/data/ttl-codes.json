@@ -1,0 +1,1446 @@
+[
+  {
+    "code": "7260",
+    "nameEt": "Silmapõhja fotografeerimine",
+    "isBillable": true,
+    "priceLimit": 19.99,
+    "documentType": "Uuringu vastus",
+    "source": "TIS"
+  },
+  {
+    "code": "7263",
+    "nameEt": "Silmapõhja uuring kolmepeegliläätse või Volke luubiga",
+    "isBillable": true,
+    "priceLimit": 13.62,
+    "documentType": "Uuringu vastus",
+    "source": "TIS"
+  },
+  {
+    "code": "7556",
+    "nameEt": "Sigmoidoskoopia",
+    "isBillable": true,
+    "priceLimit": 62.55,
+    "documentType": "Uuringu vastus",
+    "source": "TIS"
+  },
+  {
+    "code": "7559",
+    "nameEt": "Bronhoskoopia",
+    "isBillable": true,
+    "priceLimit": 94.87,
+    "documentType": "Uuringu vastus",
+    "source": "TIS"
+  },
+  {
+    "code": "7562",
+    "nameEt": "Rektoskoopia",
+    "isBillable": true,
+    "priceLimit": 36.04,
+    "documentType": "Uuringu vastus",
+    "source": "TIS"
+  },
+  {
+    "code": "7563",
+    "nameEt": "Kolposkoopia",
+    "isBillable": true,
+    "priceLimit": 83.27,
+    "documentType": "Uuringu vastus",
+    "source": "TIS"
+  },
+  {
+    "code": "7900",
+    "nameEt": "Röntgeniülesvõte peapiirkonnast (üks ülesvõte)",
+    "isBillable": true,
+    "priceLimit": 18.41,
+    "source": "TIS"
+  },
+  {
+    "code": "7901",
+    "nameEt": "Röntgeniülesvõte peapiirkonnast (kaks ülesvõtet)",
+    "isBillable": true,
+    "priceLimit": 26.21,
+    "source": "TIS"
+  },
+  {
+    "code": "7902",
+    "nameEt": "Röntgeniülesvõte peapiirkonnast (kolm või enam)",
+    "isBillable": true,
+    "priceLimit": 31.17,
+    "source": "TIS"
+  },
+  {
+    "code": "7903",
+    "nameEt": "Röntgeniülesvõte rindkere piirkonnast (üks ülesvõte)",
+    "isBillable": true,
+    "priceLimit": 20.44,
+    "source": "TIS"
+  },
+  {
+    "code": "7904",
+    "nameEt": "Röntgeniülesvõte rindkere piirkonnast (kaks ülesvõtet)",
+    "isBillable": true,
+    "priceLimit": 30.2,
+    "source": "TIS"
+  },
+  {
+    "code": "7905",
+    "nameEt": "Röntgeniülesvõte rindkere piirkonnast (kolm või enam)",
+    "isBillable": true,
+    "priceLimit": 36.08,
+    "source": "TIS"
+  },
+  {
+    "code": "7906",
+    "nameEt": "Röntgeniülesvõte lülisamba piirkonnast (üks ülesvõte)",
+    "isBillable": true,
+    "priceLimit": 20.67,
+    "source": "TIS"
+  },
+  {
+    "code": "7907",
+    "nameEt": "Röntgeniülesvõte lülisamba piirkonnast (kaks ülesvõtet)",
+    "isBillable": true,
+    "priceLimit": 30.12,
+    "source": "TIS"
+  },
+  {
+    "code": "7908",
+    "nameEt": "Röntgeniülesvõte lülisamba piirkonnast (iga järgmine)",
+    "isBillable": true,
+    "priceLimit": 18.89,
+    "source": "TIS"
+  },
+  {
+    "code": "7909",
+    "nameEt": "Röntgeniülesvõte kõhupiirkonnast (üks ülesvõte)",
+    "isBillable": true,
+    "priceLimit": 18.8,
+    "source": "TIS"
+  },
+  {
+    "code": "7910",
+    "nameEt": "Röntgeniülesvõte kõhupiirkonnast (kaks ülesvõtet)",
+    "isBillable": true,
+    "priceLimit": 27.29,
+    "source": "TIS"
+  },
+  {
+    "code": "7911",
+    "nameEt": "Röntgeniülesvõte kõhupiirkonnast (kolm või enam)",
+    "isBillable": true,
+    "priceLimit": 31.99,
+    "source": "TIS"
+  },
+  {
+    "code": "7912",
+    "nameEt": "Röntgeniülesvõte vaagnapiirkonnast (üks ülesvõte)",
+    "isBillable": true,
+    "priceLimit": 20.67,
+    "source": "TIS"
+  },
+  {
+    "code": "7913",
+    "nameEt": "Röntgeniülesvõte vaagnapiirkonnast (kaks ülesvõtet)",
+    "isBillable": true,
+    "priceLimit": 29.16,
+    "source": "TIS"
+  },
+  {
+    "code": "7914",
+    "nameEt": "Röntgeniülesvõte vaagnapiirkonnast (kolm või enam)",
+    "isBillable": true,
+    "priceLimit": 36.64,
+    "source": "TIS"
+  },
+  {
+    "code": "7915",
+    "nameEt": "Röntgeniülesvõte ülajäsemetest (üks ülesvõte)",
+    "isBillable": true,
+    "priceLimit": 20.67,
+    "source": "TIS"
+  },
+  {
+    "code": "7916",
+    "nameEt": "Röntgeniülesvõte ülajäsemetest (kaks ülesvõtet)",
+    "isBillable": true,
+    "priceLimit": 25.31,
+    "source": "TIS"
+  },
+  {
+    "code": "7917",
+    "nameEt": "Röntgeniülesvõte ülajäsemetest (iga järgmine)",
+    "isBillable": true,
+    "priceLimit": 18.45,
+    "source": "TIS"
+  },
+  {
+    "code": "7918",
+    "nameEt": "Röntgeniülesvõte alajäsemetest (üks ülesvõte)",
+    "isBillable": true,
+    "priceLimit": 22.48,
+    "source": "TIS"
+  },
+  {
+    "code": "7919",
+    "nameEt": "Röntgeniülesvõte alajäsemetest (kaks ülesvõtet)",
+    "isBillable": true,
+    "priceLimit": 25.4,
+    "source": "TIS"
+  },
+  {
+    "code": "7920",
+    "nameEt": "Röntgeniülesvõte alajäsemetest (iga järgmine)",
+    "isBillable": true,
+    "priceLimit": 18.89,
+    "source": "TIS"
+  },
+  {
+    "code": "6074",
+    "nameEt": "Mammograafia, üks rinnanääre kahes sihis",
+    "isBillable": true,
+    "priceLimit": 21.26,
+    "source": "TIS"
+  },
+  {
+    "code": "7928",
+    "nameEt": "Kuseteede kontrastuuring ehk urograafia",
+    "isBillable": true,
+    "priceLimit": 85.8,
+    "source": "TIS"
+  },
+  {
+    "code": "7930",
+    "nameEt": "Jäseme ülesvõte telje mõõtmiseks või täispikk lülisammas",
+    "isBillable": true,
+    "priceLimit": 42.72,
+    "source": "TIS"
+  },
+  {
+    "code": "7932",
+    "nameEt": "Röntgenoskoopia (üks piirkond)",
+    "isBillable": true,
+    "priceLimit": 55.64,
+    "source": "TIS"
+  },
+  {
+    "code": "7933",
+    "nameEt": "Mao või peensoole kaksikkontrasteerimine skoopial",
+    "isBillable": true,
+    "priceLimit": 89.38,
+    "source": "TIS"
+  },
+  {
+    "code": "7934",
+    "nameEt": "Röntgenoskoopia kontrastainega, sh fistulograafia",
+    "isBillable": true,
+    "priceLimit": 64.36,
+    "source": "TIS"
+  },
+  {
+    "code": "7936",
+    "nameEt": "Irrigoskoopia ehk kolograafia kaksikkontrasteerimisega",
+    "isBillable": true,
+    "priceLimit": 159.19,
+    "source": "TIS"
+  },
+  {
+    "code": "6112",
+    "nameEt": "Luutiheduse uuring aksiaalse DXA densitomeeriga",
+    "isBillable": true,
+    "priceLimit": 30.63,
+    "source": "TIS"
+  },
+  {
+    "code": "79416",
+    "nameEt": "Radiorenograafia",
+    "isBillable": true,
+    "priceLimit": 420.91,
+    "source": "TIS"
+  },
+  {
+    "code": "6263",
+    "nameEt": "Elektroentsefalograafia (kuni 1 tund)",
+    "isBillable": true,
+    "priceLimit": 76.06,
+    "source": "TIS"
+  },
+  {
+    "code": "6425",
+    "nameEt": "Toonaudiomeetriline uuring",
+    "isBillable": true,
+    "priceLimit": 38.65,
+    "source": "TIS"
+  },
+  {
+    "code": "6417",
+    "nameEt": "Tümpanomeetriline uuring",
+    "isBillable": true,
+    "priceLimit": 15.61,
+    "source": "TIS"
+  },
+  {
+    "code": "7942",
+    "nameEt": "Ühe piirkonna veenide ultraheliuuring",
+    "isBillable": true,
+    "priceLimit": 26.06,
+    "source": "TIS"
+  },
+  {
+    "code": "7943",
+    "nameEt": "Ühe piirkonna arterite ja veenide ultraheliuuring",
+    "isBillable": true,
+    "priceLimit": 37.89,
+    "source": "TIS"
+  },
+  {
+    "code": "7946",
+    "nameEt": "Ühe piirkonna liigese/liigeste ultraheliuuring",
+    "isBillable": true,
+    "priceLimit": 24.61,
+    "source": "TIS"
+  },
+  {
+    "code": "7948",
+    "nameEt": "Pehmete kudede ultraheliuuring (üks piirkond)",
+    "isBillable": true,
+    "priceLimit": 24.74,
+    "source": "TIS"
+  },
+  {
+    "code": "7950",
+    "nameEt": "Kilpnäärme ultraheliuuring",
+    "isBillable": true,
+    "priceLimit": 22.95,
+    "source": "TIS"
+  },
+  {
+    "code": "7952",
+    "nameEt": "Rinnanäärme ultraheliuuring (üks rind)",
+    "isBillable": true,
+    "priceLimit": 28.69,
+    "source": "TIS"
+  },
+  {
+    "code": "7956",
+    "nameEt": "Kõhupiirkonna ultraheliuuring",
+    "isBillable": true,
+    "priceLimit": 28.46,
+    "source": "TIS"
+  },
+  {
+    "code": "7958",
+    "nameEt": "Vaagnapiirkonna ultraheliuuring",
+    "isBillable": true,
+    "priceLimit": 28.46,
+    "source": "TIS"
+  },
+  {
+    "code": "7953",
+    "nameEt": "Kõhu- ja vaagnapiirkonna ultraheliuuring",
+    "isBillable": true,
+    "priceLimit": 41.48,
+    "source": "TIS"
+  },
+  {
+    "code": "7954",
+    "nameEt": "Vaginaalne ultraheliuuring",
+    "isBillable": true,
+    "priceLimit": 31.99,
+    "source": "TIS"
+  },
+  {
+    "code": "7960",
+    "nameEt": "Rektaalne ultraheliuuring",
+    "isBillable": true,
+    "priceLimit": 27.49,
+    "source": "TIS"
+  },
+  {
+    "code": "7963",
+    "nameEt": "Residuaaluriini määramine ultraheliga",
+    "isBillable": true,
+    "priceLimit": 15.44,
+    "source": "TIS"
+  },
+  {
+    "code": "7964",
+    "nameEt": "Kusepõie refluksi ultraheliuuring",
+    "isBillable": true,
+    "priceLimit": 37.57,
+    "source": "TIS"
+  },
+  {
+    "code": "6267",
+    "nameEt": "Elektroneuromüograafia",
+    "isBillable": true,
+    "priceLimit": 136.11,
+    "source": "TIS"
+  },
+  {
+    "code": "6268",
+    "nameEt": "Elektroneurograafia",
+    "isBillable": true,
+    "priceLimit": 88.24,
+    "source": "TIS"
+  },
+  {
+    "code": "6325",
+    "nameEt": "Tilt-test",
+    "isBillable": true,
+    "priceLimit": 114.8,
+    "source": "TIS"
+  },
+  {
+    "code": "66100",
+    "nameEt": "Albumiin, valk*",
+    "isBillable": true,
+    "priceLimit": 2.21,
+    "source": "TIS"
+  },
+  {
+    "code": "66102",
+    "nameEt": "Kreatiniin, uurea, kusihape*",
+    "isBillable": true,
+    "priceLimit": 2.18,
+    "source": "TIS"
+  },
+  {
+    "code": "66103",
+    "nameEt": "Bilirubiin, konjugeeritud bilirubiin*",
+    "isBillable": true,
+    "priceLimit": 2.21,
+    "source": "TIS"
+  },
+  {
+    "code": "66104",
+    "nameEt": "Kolesterool, triglütseriidid*",
+    "isBillable": true,
+    "priceLimit": 2.22,
+    "source": "TIS"
+  },
+  {
+    "code": "66105",
+    "nameEt": "Kolesterooli fraktsioonid: HDL, LDL*",
+    "isBillable": true,
+    "priceLimit": 2.78,
+    "source": "TIS"
+  },
+  {
+    "code": "66106",
+    "nameEt": "Ensüümid: ALP, ASAT, ALAT, LDH, CK, GGT, CK-MBa*",
+    "isBillable": true,
+    "priceLimit": 2.26,
+    "source": "TIS"
+  },
+  {
+    "code": "66107",
+    "nameEt": "Naatrium, kaalium, kaltsium*",
+    "isBillable": true,
+    "priceLimit": 2.26,
+    "source": "TIS"
+  },
+  {
+    "code": "66108",
+    "nameEt": "Kloriid, liitium, laktaat, ammoonium*",
+    "isBillable": true,
+    "priceLimit": 5.12,
+    "source": "TIS"
+  },
+  {
+    "code": "66109",
+    "nameEt": "Raud, magneesium, fosfaat*",
+    "isBillable": true,
+    "priceLimit": 2.39,
+    "source": "TIS"
+  },
+  {
+    "code": "66110",
+    "nameEt": "Lipaas, pankrease amülaas*",
+    "isBillable": true,
+    "priceLimit": 3.95,
+    "source": "TIS"
+  },
+  {
+    "code": "66111",
+    "nameEt": "Antistreptolüsiin-O, reumatoidfaktor*",
+    "isBillable": true,
+    "priceLimit": 3.14,
+    "source": "TIS"
+  },
+  {
+    "code": "66112",
+    "nameEt": "C-reaktiivne valk",
+    "isBillable": true,
+    "priceLimit": 2.78,
+    "source": "TIS"
+  },
+  {
+    "code": "66113",
+    "nameEt": "Happe-aluse tasakaal",
+    "isBillable": true,
+    "priceLimit": 6.42,
+    "source": "TIS"
+  },
+  {
+    "code": "66114",
+    "nameEt": "Hemoglobiini derivaadid ja variandid*",
+    "isBillable": true,
+    "priceLimit": 18.71,
+    "source": "TIS"
+  },
+  {
+    "code": "66115",
+    "nameEt": "Vastsündinu bilirubiin",
+    "isBillable": true,
+    "priceLimit": 8.37,
+    "source": "TIS"
+  },
+  {
+    "code": "66116",
+    "nameEt": "IgG uriinis või liikvoris*",
+    "isBillable": true,
+    "priceLimit": 6.84,
+    "source": "TIS"
+  },
+  {
+    "code": "66117",
+    "nameEt": "Albumiin uriinis (mikroalbumiin) või liikvoris*",
+    "isBillable": true,
+    "priceLimit": 3.77,
+    "source": "TIS"
+  },
+  {
+    "code": "66118",
+    "nameEt": "Glükohemoglobiin",
+    "isBillable": true,
+    "priceLimit": 7.5,
+    "source": "TIS"
+  },
+  {
+    "code": "66119",
+    "nameEt": "Immunofiksatsioon*",
+    "isBillable": true,
+    "priceLimit": 80.92,
+    "source": "TIS"
+  },
+  {
+    "code": "66120",
+    "nameEt": "Seerumi valkude elektroforees",
+    "isBillable": true,
+    "priceLimit": 12.5,
+    "source": "TIS"
+  },
+  {
+    "code": "66121",
+    "nameEt": "Uriini või liikvori valkude elektroforees",
+    "isBillable": true,
+    "priceLimit": 31.05,
+    "source": "TIS"
+  },
+  {
+    "code": "66122",
+    "nameEt": "Isoensüümide elektroforees*",
+    "isBillable": true,
+    "priceLimit": 36.73,
+    "source": "TIS"
+  },
+  {
+    "code": "66123",
+    "nameEt": "Spetsiifilised valgud 1 (IgA, IgM, IgG)*",
+    "isBillable": true,
+    "priceLimit": 4.62,
+    "source": "TIS"
+  },
+  {
+    "code": "66124",
+    "nameEt": "Spetsiifilised valgud 2 (tsüstatiin C jt)*",
+    "isBillable": true,
+    "priceLimit": 8.5,
+    "source": "TIS"
+  },
+  {
+    "code": "66125",
+    "nameEt": "Immunoglobuliinide alaklassid*",
+    "isBillable": true,
+    "priceLimit": 10.97,
+    "source": "TIS"
+  },
+  {
+    "code": "66126",
+    "nameEt": "Süsivesikdefitsiitne transferriin",
+    "isBillable": true,
+    "priceLimit": 24.54,
+    "source": "TIS"
+  },
+  {
+    "code": "66127",
+    "nameEt": "Transferriini lahustuvad retseptorid",
+    "isBillable": true,
+    "priceLimit": 9.07,
+    "source": "TIS"
+  },
+  {
+    "code": "66128",
+    "nameEt": "Angiotensiini muundav ensüüm",
+    "isBillable": true,
+    "priceLimit": 73.86,
+    "source": "TIS"
+  },
+  {
+    "code": "66129",
+    "nameEt": "Koliini esteraas",
+    "isBillable": true,
+    "priceLimit": 76.5,
+    "source": "TIS"
+  },
+  {
+    "code": "66130",
+    "nameEt": "Hemoglobiin plasmas",
+    "isBillable": true,
+    "priceLimit": 28.54,
+    "source": "TIS"
+  },
+  {
+    "code": "66131",
+    "nameEt": "Osmolaalsus",
+    "isBillable": true,
+    "priceLimit": 13.85,
+    "source": "TIS"
+  },
+  {
+    "code": "66132",
+    "nameEt": "Krüoglobuliinid",
+    "isBillable": true,
+    "priceLimit": 90.91,
+    "source": "TIS"
+  },
+  {
+    "code": "66133",
+    "nameEt": "Glükoos-6-fosfaatdehüdrogenaas",
+    "isBillable": true,
+    "priceLimit": 130.75,
+    "source": "TIS"
+  },
+  {
+    "code": "66135",
+    "nameEt": "D-ksüloos uriinis",
+    "isBillable": true,
+    "priceLimit": 41,
+    "source": "TIS"
+  },
+  {
+    "code": "66136",
+    "nameEt": "Porfüüriauuringud*",
+    "isBillable": true,
+    "priceLimit": 72.61,
+    "source": "TIS"
+  },
+  {
+    "code": "66137",
+    "nameEt": "Fenüülalaniini kvantitatiivne määramine",
+    "isBillable": true,
+    "priceLimit": 12.44,
+    "source": "TIS"
+  },
+  {
+    "code": "66138",
+    "nameEt": "Ainevahetushaiguste sõeluuringud",
+    "isBillable": true,
+    "priceLimit": 13.15,
+    "source": "TIS"
+  },
+  {
+    "code": "66139",
+    "nameEt": "Ainevahetushaiguste eriuuringud*",
+    "isBillable": true,
+    "priceLimit": 100.17,
+    "source": "TIS"
+  },
+  {
+    "code": "66140",
+    "nameEt": "Gaaskromatograafiline uuring (alkoholid jt)*",
+    "isBillable": true,
+    "priceLimit": 47.27,
+    "source": "TIS"
+  },
+  {
+    "code": "66141",
+    "nameEt": "Narkootiliste ainete ja ravimite sõeluuringud*",
+    "isBillable": true,
+    "priceLimit": 5.45,
+    "source": "TIS"
+  },
+  {
+    "code": "66142",
+    "nameEt": "Etanool",
+    "isBillable": true,
+    "priceLimit": 6.97,
+    "source": "TIS"
+  },
+  {
+    "code": "66143",
+    "nameEt": "Ravimite kontsentratsiooni määramine 1*",
+    "isBillable": true,
+    "priceLimit": 14.8,
+    "source": "TIS"
+  },
+  {
+    "code": "66144",
+    "nameEt": "Ravimite kontsentratsiooni määramine 2*",
+    "isBillable": true,
+    "priceLimit": 25.14,
+    "source": "TIS"
+  },
+  {
+    "code": "66145",
+    "nameEt": "Metallide määramine*",
+    "isBillable": true,
+    "priceLimit": 81.91,
+    "source": "TIS"
+  },
+  {
+    "code": "66200",
+    "nameEt": "Erütrotsüütide settekiiruse uuring",
+    "isBillable": true,
+    "priceLimit": 3.14,
+    "source": "TIS"
+  },
+  {
+    "code": "66201",
+    "nameEt": "Hemogramm (automaatne, ilma/3-osalise leukogrammita)",
+    "isBillable": true,
+    "priceLimit": 3.9,
+    "source": "TIS"
+  },
+  {
+    "code": "66202",
+    "nameEt": "Hemogramm viieosalise leukogrammiga",
+    "isBillable": true,
+    "priceLimit": 4.14,
+    "source": "TIS"
+  },
+  {
+    "code": "66203",
+    "nameEt": "Retikulotsüütide uuring",
+    "isBillable": true,
+    "priceLimit": 5.64,
+    "source": "TIS"
+  },
+  {
+    "code": "66204",
+    "nameEt": "Vereäige mikroskoopiline uuring",
+    "isBillable": true,
+    "priceLimit": 15.57,
+    "source": "TIS"
+  },
+  {
+    "code": "66205",
+    "nameEt": "Luuüdi tsütoloogiline uuring",
+    "isBillable": true,
+    "priceLimit": 96.59,
+    "source": "TIS"
+  },
+  {
+    "code": "66206",
+    "nameEt": "Tsütokeemiline üksikuuring",
+    "isBillable": true,
+    "priceLimit": 58.01,
+    "source": "TIS"
+  },
+  {
+    "code": "66208",
+    "nameEt": "Uriini sademe mikroskoopiline uuring",
+    "isBillable": true,
+    "priceLimit": 5.66,
+    "source": "TIS"
+  },
+  {
+    "code": "66209",
+    "nameEt": "Väljaheite sõeluuringud (peitveri, rasvhapped)*",
+    "isBillable": true,
+    "priceLimit": 11.93,
+    "source": "TIS"
+  },
+  {
+    "code": "66211",
+    "nameEt": "Kehavedelike makroskoopiline või tsütoosi uuring*",
+    "isBillable": true,
+    "priceLimit": 3.62,
+    "source": "TIS"
+  },
+  {
+    "code": "66212",
+    "nameEt": "Kehavedelike tsütogramm*",
+    "isBillable": true,
+    "priceLimit": 19.57,
+    "source": "TIS"
+  },
+  {
+    "code": "66213",
+    "nameEt": "Sperma ülduuring",
+    "isBillable": true,
+    "priceLimit": 5.36,
+    "source": "TIS"
+  },
+  {
+    "code": "66214",
+    "nameEt": "Sperma mikroskoopiline uuring",
+    "isBillable": true,
+    "priceLimit": 12.78,
+    "source": "TIS"
+  },
+  {
+    "code": "66300",
+    "nameEt": "Veritsusaja uuring",
+    "isBillable": true,
+    "priceLimit": 7.92,
+    "source": "TIS"
+  },
+  {
+    "code": "66301",
+    "nameEt": "Trombotsüütide agregatsiooni uuringud*",
+    "isBillable": true,
+    "priceLimit": 22.69,
+    "source": "TIS"
+  },
+  {
+    "code": "66302",
+    "nameEt": "Hüübimisjada sõeluuringud (PT, APTT)*",
+    "isBillable": true,
+    "priceLimit": 5.22,
+    "source": "TIS"
+  },
+  {
+    "code": "66303",
+    "nameEt": "Hüübimisjada lisauuringud (fibrinogeen, TT)*",
+    "isBillable": true,
+    "priceLimit": 7.75,
+    "source": "TIS"
+  },
+  {
+    "code": "66306",
+    "nameEt": "Fibriini laguproduktide uuringud*",
+    "isBillable": true,
+    "priceLimit": 14.02,
+    "source": "TIS"
+  },
+  {
+    "code": "66400",
+    "nameEt": "AB0-veregrupi ja Rh(D) kinnitav määramine",
+    "isBillable": true,
+    "priceLimit": 19.63,
+    "source": "TIS"
+  },
+  {
+    "code": "66401",
+    "nameEt": "AB0-veregrupi ja Rh(D) määramine (otsene reaktsioon)",
+    "isBillable": true,
+    "priceLimit": 14.4,
+    "source": "TIS"
+  },
+  {
+    "code": "66402",
+    "nameEt": "AB0-veregrupi määramine patsiendi identifitseerimisel",
+    "isBillable": true,
+    "priceLimit": 2.24,
+    "source": "TIS"
+  },
+  {
+    "code": "66403",
+    "nameEt": "Erütrotsütaarsete antikehade sõeluuring kahe erütrotsüüdiga",
+    "isBillable": true,
+    "priceLimit": 14.72,
+    "source": "TIS"
+  },
+  {
+    "code": "66404",
+    "nameEt": "Erütrotsütaarsete antikehade sõeluuring kolme erütrotsüüdiga",
+    "isBillable": true,
+    "priceLimit": 15.54,
+    "source": "TIS"
+  },
+  {
+    "code": "66405",
+    "nameEt": "Erütrotsütaarsete antikehade tüpiseerimine ühel paneelil",
+    "isBillable": true,
+    "priceLimit": 33.66,
+    "source": "TIS"
+  },
+  {
+    "code": "66542",
+    "nameEt": "Kiiranalüüs haigustekitaja markeri määramiseks",
+    "isBillable": true,
+    "priceLimit": 22.82,
+    "source": "TIS"
+  },
+  {
+    "code": "66608",
+    "nameEt": "DNA analüüs PCR-meetodil*",
+    "isBillable": true,
+    "priceLimit": 19.48,
+    "source": "TIS"
+  },
+  {
+    "code": "66706",
+    "nameEt": "Sõeluuringud, hormoon-, haigustekitajate uuringud immuunmeetodil*",
+    "isBillable": true,
+    "priceLimit": 8.17,
+    "source": "TIS"
+  },
+  {
+    "code": "66707",
+    "nameEt": "Aneemia-, südame-, kasvajamarkerid immuunmeetodil*",
+    "isBillable": true,
+    "priceLimit": 9.05,
+    "source": "TIS"
+  },
+  {
+    "code": "66708",
+    "nameEt": "Tsütokiinid, allergeenipaneelid immuunmeetodil*",
+    "isBillable": true,
+    "priceLimit": 12.71,
+    "source": "TIS"
+  },
+  {
+    "code": "66709",
+    "nameEt": "Harvaesinevad ja kinnitavad uuringud immuunmeetodil*",
+    "isBillable": true,
+    "priceLimit": 28.16,
+    "source": "TIS"
+  },
+  {
+    "code": "66710",
+    "nameEt": "Kiiranalüüs testribaga",
+    "isBillable": true,
+    "priceLimit": 5.68,
+    "source": "TIS"
+  },
+  {
+    "code": "66711",
+    "nameEt": "Immuunfluorestsentsuuring*",
+    "isBillable": true,
+    "priceLimit": 25.16,
+    "source": "TIS"
+  },
+  {
+    "code": "66712",
+    "nameEt": "Immuunfluorestsentsuuring valmisslaididel*",
+    "isBillable": true,
+    "priceLimit": 27.36,
+    "source": "TIS"
+  },
+  {
+    "code": "66713",
+    "nameEt": "Biopsiamaterjali immuunfluorestsentsuuring",
+    "isBillable": true,
+    "priceLimit": 68.42,
+    "source": "TIS"
+  },
+  {
+    "code": "66714",
+    "nameEt": "Immuunblot-uuring*",
+    "isBillable": true,
+    "priceLimit": 35.03,
+    "source": "TIS"
+  },
+  {
+    "code": "66715",
+    "nameEt": "Kompleksne immuunblot-uuring",
+    "isBillable": true,
+    "priceLimit": 129.88,
+    "source": "TIS"
+  },
+  {
+    "code": "66716",
+    "nameEt": "Spetsiifiliste antikehade kompleksne samastamine",
+    "isBillable": true,
+    "priceLimit": 45.38,
+    "source": "TIS"
+  },
+  {
+    "code": "66813",
+    "nameEt": "Tsütobloki uuring (1 blokk)",
+    "isBillable": true,
+    "priceLimit": 24.23,
+    "source": "TIS"
+  },
+  {
+    "code": "7050",
+    "nameEt": "Füsioteraapia individuaalne (30 min)",
+    "isBillable": true,
+    "priceLimit": 22.3,
+    "documentType": "Päevikukanne",
+    "source": "TIS"
+  },
+  {
+    "code": "7055",
+    "nameEt": "Füsioteraapia individuaalne (60 min)",
+    "isBillable": true,
+    "priceLimit": 40.31,
+    "documentType": "Päevikukanne",
+    "source": "TIS"
+  },
+  {
+    "code": "7065",
+    "nameEt": "Kaugfüsioteraapia individuaalne (30 min)",
+    "isBillable": true,
+    "priceLimit": 22.3,
+    "documentType": "Päevikukanne",
+    "source": "TIS"
+  },
+  {
+    "code": "7052",
+    "nameEt": "Füsioteraapia grupis (30 min)",
+    "isBillable": true,
+    "priceLimit": 11.94,
+    "documentType": "Päevikukanne",
+    "source": "TIS"
+  },
+  {
+    "code": "7067",
+    "nameEt": "Kaugfüsioteraapia grupis (30 min)",
+    "isBillable": true,
+    "priceLimit": 11.94,
+    "documentType": "Päevikukanne",
+    "source": "TIS"
+  },
+  {
+    "code": "7060",
+    "nameEt": "Füsioteraapia igapäevases keskkonnas",
+    "isBillable": true,
+    "priceLimit": 69.78,
+    "documentType": "Päevikukanne",
+    "source": "TIS"
+  },
+  {
+    "code": "9001",
+    "nameEt": "Perearsti kontaktvastuvõtt",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9004",
+    "nameEt": "Perearsti koduvisiit",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9018",
+    "nameEt": "Perearsti telefoni teel toimunud patsiendinõustamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9019",
+    "nameEt": "Perearsti digiteenindusplatvormi teel toimunud patsiendinõustamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9111",
+    "nameEt": "Üldarsti kontaktvastuvõtt",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9112",
+    "nameEt": "Üldarsti koduvisiit",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9113",
+    "nameEt": "Üldarsti telefoni teel toimunud patsiendinõustamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9114",
+    "nameEt": "Üldarsti digiteenindusplatvormi teel toimunud patsiendinõustamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9044",
+    "nameEt": "Kroonilise haige nõustamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9115",
+    "nameEt": "Töö patsiendi andmetega",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9116",
+    "nameEt": "Retsepti pikendamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9061",
+    "nameEt": "Pereõe kontaktvastuvõtt",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9062",
+    "nameEt": "Pereõe õendustoiming (käeline tegevus)",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9063",
+    "nameEt": "Pereõe koduvisiit",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9064",
+    "nameEt": "Pereõe telefoni teel toimunud patsiendinõustamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9065",
+    "nameEt": "Pereõe digiteenindusplatvormi teel toimunud patsiendinõustamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9120",
+    "nameEt": "Difteeria, teetanuse, läkaköha, poliomüeliidi, Haemofilus influenzae ja B-viirushepatiidi vastane vaktsineerimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9120k",
+    "nameEt": "Keeldumine difteeria, teetanuse, läkaköha, poliomüeliidi, Haemofilus influenzae ja B-viirushepatiidi vastu vaktsineerimisest",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9120v",
+    "nameEt": "Meditsiiniline vastunäidustus difteeria, teetanuse, läkaköha, poliomüeliidi, Haemofilus influenzae ja B-viirushepatiidi vastu vaktsineerimisele",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9121",
+    "nameEt": "Leetrite, mumpsi ja punetise vastane vaktsineerimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9121k",
+    "nameEt": "Keeldumine leetrite, mumpsi ja punetise vastu vaktsineerimisest",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9121v",
+    "nameEt": "Meditsiiniline vastunäidustus leetrite, mumpsi ja punetise vastu vaktsineerimisele",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9122",
+    "nameEt": "Difteeria, teetanuse, läkaköha ja poliomüeliidi vastane vaktsineerimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9122k",
+    "nameEt": "Keeldumine difteeria, teetanuse, läkaköha ja poliomüeliidi vastu vaktsineerimisest",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9122v",
+    "nameEt": "Meditsiiniline vastunäidustus difteeria, teetanuse, läkaköha ja poliomüeliidi vastu vaktsineerimisele",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9123",
+    "nameEt": "Difteeria, teetanuse, läkaköha vastane vaktsineerimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9123k",
+    "nameEt": "Keeldumine difteeria, teetanuse ja läkaköha vastu vaktsineerimisest",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9123v",
+    "nameEt": "Meditsiiniline vastunäidustus difteeria, teetanuse ja läkaköha vastu vaktsineerimisele",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9124",
+    "nameEt": "Difteeria ja teetanuse vastane vaktsineerimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9124k",
+    "nameEt": "Keeldumine difteeria ja teetanuse vastu vaktsineerimisest",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9124v",
+    "nameEt": "Meditsiiniline vastunäidustus difteeria ja teetanuse vastu vaktsineerimisele",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9027",
+    "nameEt": "B-viirushepatiidi vastane vaktsineerimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9027k",
+    "nameEt": "Keeldumine B-viirushepatiidi vastu vaktsineerimisest",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9027v",
+    "nameEt": "Meditsiiniline vastunäidustus B-viirushepatiidi vastu vaktsineerimisele",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9028",
+    "nameEt": "Difteeria, teetanuse, läkaköha, poliomüeliidi, Haemofilus influenzae vastane vaktsineerimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9125",
+    "nameEt": "Muu haiguse vastu vaktsineerimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9029",
+    "nameEt": "Rotaviirusnakkuse vastane vaktsineerimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9029k",
+    "nameEt": "Keeldumine rotaviirusnakkuse vastu vaktsineerimisest",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9029v",
+    "nameEt": "Meditsiiniline vastunäidustus rotaviirusnakkuse vastu vaktsineerimisele",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9049",
+    "nameEt": "HPV vaktsineerimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9049k",
+    "nameEt": "HPV vaktsineerimisest keeldumine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9049v",
+    "nameEt": "Meditsiiniline vastunäidustus HPV vastu vaktsineerimisele",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9080",
+    "nameEt": "Laste profülaktiline läbivaatus vastavalt Lapse tervise jälgimise juhendile",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9038",
+    "nameEt": "Jämesoolevähi sõeluuringu nõustamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9039",
+    "nameEt": "Peitvere testi komplekt",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9045",
+    "nameEt": "Perearsti poolt raseduse tuvastamine ja jälgimine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9047",
+    "nameEt": "Soolepuhastuspreparaat",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9048",
+    "nameEt": "Jämesoolevähi sõeluuringust keeldumine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9071",
+    "nameEt": "Suurenenud hambaravi vajaduse tekkimise hindamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9072",
+    "nameEt": "Elupuhune hambaravi määramine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9051",
+    "nameEt": "Vaimse tervise õe vastuvõtt",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9052",
+    "nameEt": "Vaimse tervise õe kaugvastuvõtt",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9153",
+    "nameEt": "Vaimse tervise õe vastuvõtt (alla 19-aastasele isikule)",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9154",
+    "nameEt": "Vaimse tervise õe kaugvastuvõtt (alla 19-aastasele isikule)",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9155",
+    "nameEt": "Kopsuvähi sõeluuringu nõustamine",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9201",
+    "nameEt": "VESTA riskipatsient vajab koordinatsiooni, kuid keeldub",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "9202",
+    "nameEt": "VESTA riskipatsient ei vaja koordinatsiooni",
+    "isBillable": false,
+    "priceLimit": 0,
+    "source": "FREE"
+  },
+  {
+    "code": "7053",
+    "nameEt": "Tegevusteraapia individuaalne (kestus 30 min)",
+    "isBillable": true,
+    "priceLimit": 22.12,
+    "documentType": "Spetsialisti kood",
+    "source": "PIS"
+  },
+  {
+    "code": "7068",
+    "nameEt": "Kaugtegevusteraapia individuaalne (kestus 30 min)",
+    "isBillable": true,
+    "priceLimit": 22.12,
+    "documentType": "Spetsialisti kood",
+    "source": "PIS"
+  },
+  {
+    "code": "7054",
+    "nameEt": "Tegevusteraapia 2–3 haigele samal ajal (kestus 30 min)",
+    "isBillable": true,
+    "priceLimit": 13.2,
+    "documentType": "Spetsialisti kood",
+    "source": "PIS"
+  },
+  {
+    "code": "7069",
+    "nameEt": "Kaugtegevusteraapia 2–3 haigele samal ajal (kestus 30 min)",
+    "isBillable": true,
+    "priceLimit": 13.2,
+    "documentType": "Spetsialisti kood",
+    "source": "PIS"
+  }
+]

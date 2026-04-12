@@ -1,0 +1,66 @@
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-nav {
+  width: 220px;
+  min-width: 220px;
+  background: var(--color-primary-dark, #1a3a5c);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-md, 16px) 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 200;
+}
+
+.app-nav-brand {
+  display: block;
+  padding: var(--spacing-md, 16px) var(--spacing-lg, 24px);
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md, 16px);
+}
+
+.app-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.app-nav-link {
+  display: block;
+  padding: var(--spacing-sm, 8px) var(--spacing-lg, 24px);
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-radius: 0;
+  transition: background 0.15s, color 0.15s;
+}
+
+.app-nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.app-nav-link.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+}
+
+.app-content {
+  margin-left: 220px;
+  flex: 1;
+  background: var(--color-background, #f5f7fa);
+  padding: var(--spacing-lg, 24px);
+  min-height: 100vh;
+  padding-bottom: 80px; /* room for sticky summary bar */
+}
