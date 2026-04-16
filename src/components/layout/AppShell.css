@@ -22,11 +22,24 @@
 .app-nav-brand {
   display: block;
   padding: var(--spacing-md, 16px) var(--spacing-lg, 24px);
+  padding-left: calc(var(--spacing-lg, 24px) - 3px);
+  border-left: 3px solid var(--color-accent, #4fc3f7);
   color: white;
   text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  line-height: 1;
   margin-bottom: var(--spacing-md, 16px);
+}
+
+.app-nav-brand-health {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.app-nav-brand-bill {
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .app-nav-links {

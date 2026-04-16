@@ -6,7 +6,8 @@ export default function AppShell() {
     <div className="app-shell">
       <nav className="app-nav">
         <NavLink to="/invoices" className="app-nav-brand">
-          HealthBill
+          <span className="app-nav-brand-health">Health</span>
+          <span className="app-nav-brand-bill">Bill</span>
         </NavLink>
         <div className="app-nav-links">
           <NavLink
